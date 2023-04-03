@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Lorem</title>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230403140616">
+</head>
+<body class="page">
+<header class="header">
+    <div class="header__container">
+        <div class="logo">
+    <a class="logo__link">
+        <img class="logo__image" src="img/logo.svg" width="247" height="35" alt="logo">
+    </a>
+</div>
+        <input class="header__button visually-hidden" type="checkbox" id="toggle__button">
+        <label class="header__button-icon" for="toggle__button"><span class="visually-hidden">Open/Close</span></label>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link header__nav-link--active">
+                        Бизнес
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">
+                        О нас
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">
+                        Цены
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">
+                        Оформить заказ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="intro">
+    <div class="intro__container">
+        <h1 class="intro__title">
+            <span class="word-selection">Lorem ipsum</span> dolor sit ametconsectetur <span
+                class="word-selection">adipiscing</span>
+        </h1>
+        <p class="intro__description">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="intro__advantages">
+            <li class="intro__advantage">Totam rem aperiam eaque ipsa</li>
+            <li class="intro__advantage">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="intro__advantage">Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+        <div class="intro__buttons">
+            <a href="#" class="button button--filled intro__button">заказать</a>
+            <a href="#" class="button intro__button">подробнее</a>
+        </div>
+    </div>
+</section>
+    <section class="order">
+    <div class="order__container">
+
+        <h2 class="order__title">Оформление <span class="word-selection">Заказа</span></h2>
+        <p class="order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <ul class="order__steps">
+            <li class="order__step order__step--find">Lorem ipsum dolor sit amet</li>
+            <li class="order__step order__step--percent">Сonsecteturadipiscing elit</li>
+            <li class="order__step order__step--document">Sed do eiusmod tempor</li>
+            <li class="order__step order__step--mail">Esse cillum dolore eu fugiat</li>
+            <li class="order__step order__step--money">Excepteur sint occaecat cupidatat non proident</li>
+        </ul>
+        <form class="form" method="post" action="#">
+    <!-- ⚠️ для стилизации сетки формы испольузется css grid,
+     добавить поля можно, НО необходимо будет поправить стилизацию! -->
+    <div class="select form__input form__input--select">
+        <select name="type">
+            <option value="0">Выберите тип системы</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="6">Aut deleniti</option>
+            <option value="7">Alias assumenda</option>
+            <option value="8">Consectetur adipisicing</option>
+            <option value="9">Dolor sit amet</option>
+            <option value="10">Assumenda aut</option>
+            <option value="11">Distinctio dolorem</option>
+            <option value="12">Illo incidunt</option>
+        </select>
+    </div>
+    <div class="input form__input form__input--email">
+        <label class="visually-hidden" for="email">Ваш e-mail</label>
+        <input class="input__field" type="email" name="email" id="email" placeholder="Ваш e-mail">
+    </div>
+    <div class="input form__input form__input--name">
+        <label class="visually-hidden" for="name">Ваше имя</label>
+        <input class="input__field" type="text" name="name" id="name" placeholder="Ваше имя">
+    </div>
+    <div class="range form__input form__input--range">
+        <label class="range__label" for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+        <output class="range__output" id="output">75%</output>
+        <input type="range" min="0" max="100" value="75" class="range__slider" id="range">
+    </div>
+    <div class="input form__input form__input--file">
+        <label class="input__label input__label--file" for="file">Прикрепить файл</label>
+        <input class="visually-hidden" type="file" name="file" id="file" accept=".pdf .doc .docx">
+    </div>
+    <button class="button button--filled form__input form__input--submit" type="submit">Отправить</button>
+</form>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <ul class="footer__payments">
+            <li class="footer__payment footer__payment--qiwi" id="qiwiWallet">
+                QIWI wallet
+            </li>
+            <li class="footer__payment footer__payment--yamoney" id="yandexMoney">
+                Yandex Money
+            </li>
+            <li class="footer__payment footer__payment--webmoney" id="webMoney">
+                Web Money
+            </li>
+        </ul>
+        <ul class="footer__contacts">
+            <li class="footer__contact">
+                <a class="footer__contact-link footer__contact-link--email" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+            </li>
+            <li class="footer__contact">
+                <a class="footer__contact-link footer__contact-link--vk" href="https://vk.com/" target="_blank">Мы вконтакте</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/app.min.js?_v=20230403140616"></script>
+</body>
+</html>

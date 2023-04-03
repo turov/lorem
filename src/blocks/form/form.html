@@ -1,0 +1,39 @@
+<form class="form" method="post" action="#">
+    <!-- ⚠️ для стилизации сетки формы испольузется css grid,
+     добавить поля можно, НО необходимо будет поправить стилизацию! -->
+    <div class="select form__input form__input--select">
+        <select name="type">
+            <option value="0">Выберите тип системы</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="6">Aut deleniti</option>
+            <option value="7">Alias assumenda</option>
+            <option value="8">Consectetur adipisicing</option>
+            <option value="9">Dolor sit amet</option>
+            <option value="10">Assumenda aut</option>
+            <option value="11">Distinctio dolorem</option>
+            <option value="12">Illo incidunt</option>
+        </select>
+    </div>
+    <div class="input form__input form__input--email">
+        <label class="visually-hidden" for="email">Ваш e-mail</label>
+        <input class="input__field" type="email" name="email" id="email" placeholder="Ваш e-mail">
+    </div>
+    <div class="input form__input form__input--name">
+        <label class="visually-hidden" for="name">Ваше имя</label>
+        <input class="input__field" type="text" name="name" id="name" placeholder="Ваше имя">
+    </div>
+    <div class="range form__input form__input--range">
+        <label class="range__label" for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+        <output class="range__output" id="output">75%</output>
+        <input type="range" min="0" max="100" value="75" class="range__slider" id="range">
+    </div>
+    <div class="input form__input form__input--file">
+        <label class="input__label input__label--file" for="file">Прикрепить файл</label>
+        <input class="visually-hidden" type="file" name="file" id="file" accept=".pdf .doc .docx">
+    </div>
+    <button class="button button--filled form__input form__input--submit" type="submit">Отправить</button>
+</form>

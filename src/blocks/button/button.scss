@@ -1,0 +1,30 @@
+.button {
+  border: 1px solid $button-border;
+  border-radius: 4px;
+  color: $button-text;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  font-size: 13px;
+  background-color: $base-white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    color: $light-blue;
+    transform: translateY(-5px);
+  }
+
+  &--filled {
+    border-color: $base-white;
+    color: $base-white;
+    background-color: $light-blue;
+
+    &:hover {
+      border-color: $button-border;
+      background-color: $base-white;
+      color: $light-blue;
+    }
+  }
+}

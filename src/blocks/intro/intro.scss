@@ -1,0 +1,109 @@
+.intro {
+  background-color: $base-white;
+  color: $base-black;
+  padding: 204px 0 124px;
+  background-image: url("../../img/intro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro__container {
+  @include container;
+  padding: 0 16px;
+}
+
+.intro__title {
+  margin: 0 0 80px;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 780px;
+  width: 100%;
+}
+
+.intro__description {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  max-width: 780px;
+  width: 100%;
+}
+
+.intro__advantages {
+  @include list;
+  font-size: 20px;
+  margin-bottom: 80px;
+  max-width: 780px;
+}
+
+.intro__advantage {
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 11px;
+    width: 6px;
+    height: 2px;
+    background: $base-black;
+  }
+}
+
+.intro__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+  max-width: 780px;
+  width: 100%;
+}
+
+.intro__button {
+  width: 183px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: $tablet) {
+  .intro {
+    padding: 164px 0 84px;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f3fe, #e0e8fe, #c9dffd, #add7fb);
+  }
+
+  .intro__buttons {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    padding: 100px 0 24px;
+  }
+  .intro__container {
+    width: 100%;
+  }
+
+  .intro__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .intro__advantages {
+    margin-bottom: 30px;
+  }
+
+  .intro__button {
+    margin-right: 10px;
+    width: 138px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
